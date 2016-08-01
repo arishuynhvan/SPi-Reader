@@ -5,6 +5,9 @@
 	<%= f.text_area :text %>
   </p>
   <p>
-    <%= f.submit %>
+    <%= f.submit "Save" %>
+  </p>
+  <p>
+    <%= link_to 'All Input', 'articles#index' %>
   </p>
 <% end %>
