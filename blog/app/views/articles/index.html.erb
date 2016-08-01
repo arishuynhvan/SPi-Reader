@@ -7,14 +7,16 @@
 
   <% @articles.each do |article| %>
     <tr>
+	<% if article != nil %>
       <td><%= article.text %></td>
-	  <td><%= link_to 'Show', article_path(article) %></td>
-	  <td><%= link_to 'Run', 'articles#run' %></td> 
+	  <td><%= link_to 'Show', :action => "show", :id => article.id %></td>
+	  <td><%= link_to 'Run', :action => "run", :id => article.id %>
 	  <td><%= link_to 'Destroy', article_path(article),
 	               method: :delete,
 				   data: { confirm: 'Are you sure?' } 
 	       %>
 	  </td>
+	<% end -%>
     </tr>
-  <% end %>
+  <% end -%>
 </table>
