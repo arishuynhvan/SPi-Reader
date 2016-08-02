@@ -26,9 +26,10 @@ class ArticlesController < ApplicationController
 
   def run
     @article = Article.find(params[:id])
-	command = "sonic_pi " + @article.text
-	puts command
-	system("./app/controllers/SPi.sh")
+	command = @article.text
+	puts 'From articles_controller.rb: ' + command
+	system("./app/controllers/SPi.sh " + command)
+    #system("./app/controllers/SPi-client.rb " + command) 
   end
 
   private
