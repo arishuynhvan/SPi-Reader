@@ -26,6 +26,9 @@ class ArticlesController < ApplicationController
 
   def run
     @article = Article.find(params[:id])
+	command = "sonic_pi " + @article.text
+	puts command
+	system("./app/controllers/SPi.sh")
   end
 
   private
