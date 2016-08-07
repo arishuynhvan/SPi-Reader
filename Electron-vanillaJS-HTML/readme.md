@@ -1,6 +1,10 @@
 # Accompanying repository for the Electron guide
 
 First, install/upgrade to the latest nodejs and npm 
+Next, install all the dependencies using
+```
+npm install
+```
 It's recommended to set electron as global package
 ```
 npm install --save-dev -g electron-prebuilt@latest
