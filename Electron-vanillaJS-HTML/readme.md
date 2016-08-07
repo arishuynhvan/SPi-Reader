@@ -31,5 +31,22 @@ If any issue with path/directories may involve in the future, it will be higly d
 [ ] Migrate to Reactjs (structure the view, store/model, controller properly)
 [ ] Write the blog post
 [ ] Finish up building of Sonic Pi from source code
+[ ]Learn how to handle database with JSON
 
-Learn how to handle databse with JSON
+
+### Note for running Electron on Raspberry Pi (untested):
+Electron now does support ARM.
+
+1 Get the dependecies going apt-get install libgtk2.0-0 libnotify4 libgconf2-4 libnss3 node npm
+2 Download the latest arm release called electron-...-linux-arm.zip from here
+3 unzip electron-...-linux-arm.zip
+4 go inside the folder and double click the file named electron
+
+Not so sure what #2 & #3 are necessary
+
+Reflection:
+1. If we want to build a standalone app for accessbility users with its own screen reader (i.e. speech synthesizer integration), why don't we might as well working on Sonic Pi original project?
+
+2. Considering that Sonic Pi was built with Qt which has GTK+ browser, should we use GAIL module as mentioned in this article - [Make Your Application Accessible with Accerciser](http://www.linuxjournal.com/article/9991) ?
+
+3. How much efforts are required for making a screen reader directly in Sonic Pi?
