@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Hello World!</title>
         <script type="text/javascript" src="control.js"s></script>
+          <script type="text/babel" src="./src/entry.js"></script>
+        <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <script src="https://npmcdn.com/jquery@3.1.0/dist/jquery.min.js"></script>
+    <script src="https://npmcdn.com/remarkable@1.6.2/dist/remarkable.min.js"></script>
 
   </head>
   <body>
@@ -30,5 +36,9 @@
     <h6>We are using node <script>document.write(process.versions.node)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>. <br>THIS IS A NOT A WORKING PROTOTYPE YET</h6>
+    <div id="react-root" ><h1>React goes here</h1></div>
+
+  <script src="./build/bundle.js"></script>
+
   </body>
 </html>
