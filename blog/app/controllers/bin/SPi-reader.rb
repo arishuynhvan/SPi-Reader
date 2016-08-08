@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# Credit for most of the code: https://github.com/Widdershin/sonic-pi-cli/blob/master/bin/sonic_pi
+# Modified code from: https://github.com/Widdershin/sonic-pi-cli/blob/master/bin/sonic_pi
 # Thanks to samaaron for making sonic-pi
 
 require_relative 'SPi'
