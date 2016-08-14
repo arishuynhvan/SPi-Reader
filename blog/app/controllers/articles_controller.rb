@@ -28,8 +28,8 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
 	command = @article.text
 	puts 'From articles_controller.rb: ' + command
-	system("./app/controllers/SPi.sh " + command)
-    #system("./app/controllers/SPi-client.rb " + command) 
+	#system("./app/controllers/SPi.sh " + command)
+    system("./app/controllers/bin/SPi-reader.rb " + command) 
   end
 
   private
