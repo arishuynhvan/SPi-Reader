@@ -3,42 +3,44 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
-        <script type="text/javascript" src="control.js"s></script>
-          <script type="text/babel" src="./src/entry.js"></script>
-        <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
-    <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
-    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
-    <script src="https://npmcdn.com/jquery@3.1.0/dist/jquery.min.js"></script>
-    <script src="https://npmcdn.com/remarkable@1.6.2/dist/remarkable.min.js"></script>
+       
 
   </head>
   <body>
+<form>
     <h1>SPi Reader</h1>
 
   <div id="displaytext">Let's SPi up the music! Press tab key to navigate around workspace</div>
 
-  <div id="form_container">
-    <input id="text_field" maxlength="100" size="1000" type="text" style="width: 200px; height: 100px;">
-    <input id="submit_btn" type="submit" value="Submit" onClick="submit()" style="width: 50px; height: 30px;">
-  </div>
-    <div class="buffer-view">
-    <!--Consider using JS to make this more modular using the MVC model & lighter with Virtual DOM
-    Minimal HTML for basic prototype, not fully functional yet-->
+ <fiedlset>
+   <!-- <input id="text_field" maxlength="100" size="1000" type="text" style="width: 200px; height: 100px;">-->
+    <textarea name="comment" data-gramm="true" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: normal; font-size: 12px; transition: none; background: transparent !important;width:500px;height:200px;padding:20px"></textarea>  
+    <input id="submit_btn" type="submit" value="Play" onClick="" style="width: 50px; height: 30px;">
+ </fiedlset>
+   <!-- <div class="buffer-view">
+    Consider using JS to make this more modular using the MVC model & lighter with Virtual DOM
+    Minimal HTML for basic prototype, not fully functional yet
       <div id="buffer1"><h2>Buffer 1</h2>
+    </div>-->
+        <button id="play" style="width: 50px; height: 30px; margin: 20px">Save</button>
 
-      </div>
-    </div>
-        <button id="play" style="width: 50px; height: 30px; margin: 20px">Play</button>
-
-        <button id="del" style="width: 50px; height: 30px; margin: 20px;float: left" onclick="del()">Delete</button>
+        <button id="del" style="width: 50px; height: 30px; margin: 20px;" onclick="">Load</button>
+        </form>
 </body>
 </html>
     <h6>We are using node <script>document.write(process.versions.node)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>. <br>THIS IS A NOT A WORKING PROTOTYPE YET</h6>
-    <div id="react-root" ><h1>React goes here</h1></div>
+   <!-- <div id="react-root" ><h1>React goes here</h1></div>
 
-  <script src="./build/bundle.js"></script>
+  <script src="./build/bundle.js"></script>-->
 
   </body>
+ <script type="text/javascript" src="control.js"s></script>
+      <!--    <script type="text/babel" src="./src/entry.js"></script>
+        <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <script src="https://npmcdn.com/jquery@3.1.0/dist/jquery.min.js"></script>
+    <script src="https://npmcdn.com/remarkable@1.6.2/dist/remarkable.min.js"></script>-->
 </html>
