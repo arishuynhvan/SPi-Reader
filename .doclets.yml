@@ -1,0 +1,14 @@
+dir: Electron-vanillaJS-HTML
+
+packageJson: package.json
+
+articles:
+
+ 	- Milestones: README.md
+
+ 	- Overview: Electron-vanillaJS-HTML/readme.md
+
+branches:
+
+  - basic-electron-display
+  - feature/implementTTS
