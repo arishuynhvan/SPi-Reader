@@ -1,3 +1,4 @@
+/**@module*/
 // Functions associated with forms and buttons on index.html are defined here.
 
 var num=0;
@@ -12,11 +13,13 @@ function submit(){
 		document.getElementById('buffer1').appendChild(storeNode);
 	} 
 }
-
+/**For deleting buffers
+ */
 function del(){
 	storeNode.parentNode.removeChild(storeNode);
 }
-
+/** For sending input to server
+ */ 
 function sendServer() {
   if(storeNode.length == null || storeNode.length == 0) {
 	  console.log('buffer is empty');
