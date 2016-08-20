@@ -1,6 +1,6 @@
 dir: Electron-vanillaJS-HTML
 
-packageJson: package.json
+packageJson: Electron-vanillaJS-HTML/package.json
 
 articles:
 
