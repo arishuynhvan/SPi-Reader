@@ -4,9 +4,8 @@ packageJson: package.json
 
 articles:
 
- 	- Milestones: README.md
-
- 	- Overview: Electron-vanillaJS-HTML/readme.md
+ - Milestones: README.md
+ - Overview: Electron-vanillaJS-HTML/readme.md
 
 branches:
 
