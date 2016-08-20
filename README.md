@@ -9,6 +9,7 @@ For documentation: https://doclets.io/arishuynhvan/SPi-Reader/basic-electron-dis
 - [x] Establish communication with local server
 - [x] Select & Implement API for screen reader
 - [x] Integrate documentation for JS files
+- [ ] Write a guideline on how to type comments for documentation
 - [ ] Release front-end web app v0.1.0 by Mon, 22th Aug 2016
 - [ ] Schedule tests with users for feedback 
 - [ ] Easy installation package
