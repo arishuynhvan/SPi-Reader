@@ -15,5 +15,9 @@
   "scripts": {
     "start": "./node_modules/.bin/electron .",
     "build": "./node_modules/.bin/webpack"
+  },
+  "dependencies": {
+    "material-ui": "^0.15.4",
+    "react": "^15.3.1"
   }
 }
