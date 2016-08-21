@@ -41,10 +41,10 @@ If any issue with path/directories may involve in the future, it will be higly d
 ### Note for running Electron on Raspberry Pi (untested):
 Electron now does support ARM.
 
-1 Get the dependecies going apt-get install libgtk2.0-0 libnotify4 libgconf2-4 libnss3 node npm
-2 Download the latest arm release called electron-...-linux-arm.zip from here
-3 unzip electron-...-linux-arm.zip
-4 go inside the folder and double click the file named electron
+1. Get the dependecies going apt-get install libgtk2.0-0 libnotify4 libgconf2-4 libnss3 node npm
+2. Download the latest arm release called electron-...-linux-arm.zip from here
+3. unzip electron-...-linux-arm.zip
+4. go inside the folder and double click the file named electron
 
 Not so sure what #2 & #3 are necessary
 
