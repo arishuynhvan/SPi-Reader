@@ -50,9 +50,9 @@ function control(){
   	*/  
     function saveCode(){
     
-	storeCode = document.getElementById('code').value;
+	storeCode = document.getElementById('code').value;}
 
-var num=0;
+	var num=0;
 	function saveCode(){
     //Store the value in the text-field, which is the input from the user, into a variable
 	var storeCode = document.getElementById('code').value;
@@ -81,7 +81,7 @@ var num=0;
 	  if (error !== null) {
 	    console.log('exec error: ' + error);
 	  }
-  });
-}
+  	});
+	}
 };
 control();
