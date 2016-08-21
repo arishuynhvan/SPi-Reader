@@ -48,15 +48,13 @@ function control(){
   	*/  
     function saveCode(){
     
-	storeCode = document.getElementById('text_field').value;
+	storeCode = document.getElementById('code').value;
 // Functions associated with forms and buttons on index.html are defined here.
 
 var num=0;
-var storeNode;
-
 	function saveCode(){
     //Store the value in the text-field, which is the input from the user, into a variable
-	var storeCode = document.getElementById('text_field').value;
+	var storeCode = document.getElementById('code').value;
 	
 	/*if(storeCode.length!==0){
 		storeNode = document.createTextNode(storeCode);
@@ -71,7 +69,7 @@ var storeNode;
 	  console.log('User hasn\'t typed anything yet');
 	  return;
   	}
-  	console.log('playing: ' + storeNode.nodeValue);
+  	console.log('playing: ' + storeCode);
   var exec = require('child_process').exec, child;
 
   child = exec('./client/SPi-reader.rb ' + storeCode,
