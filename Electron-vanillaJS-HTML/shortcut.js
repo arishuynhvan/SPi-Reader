@@ -30,7 +30,7 @@ module.exports=shortcut = {
 		//The function to be called at keypress
 		var func = function(e) {
 			e = e || window.event;
-			
+			/*
 			if(opt['disable_in_input']) { //Don't enable shortcut keys in Input, Textarea fields
 				var element;
 				if(e.target) element=e.target;
@@ -38,7 +38,7 @@ module.exports=shortcut = {
 				if(element.nodeType==3) element=element.parentNode;
 
 			//	if(element.tagName == 'INPUT' || element.tagName == 'TEXTAREA') return;
-			}
+			}*/
 	
 			//Find Which key is pressed
 			if (e.keyCode) code = e.keyCode;
