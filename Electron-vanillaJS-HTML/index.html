@@ -12,17 +12,17 @@
 
   <div id="displaytext">Let's SPi up the music! Press tab key to navigate around workspace</div>
 
- <fiedlset>
+ <fieldset>
    <!-- <input id="text_field" maxlength="100" size="1000" type="text" style="width: 200px; height: 100px;">-->
     <textarea class="mousetrap" id="code" data-gramm="true" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: normal; font-size: 12px; transition: none; background: transparent !important;width:500px;height:200px;padding:20px"></textarea>  
-    <input class="mousetrap" id="submit_btn" type="button" value="Play" onClick="" style="width: 50px; height: 30px;">
- </fiedlset>
+    <input class="mousetrap" id="submit_btn" type="button" value="Play" onclick="sendServer()" style="width: 50px; height: 30px;">
+ </fieldset>
    <!-- <div class="buffer-view">
     Consider using JS to make this more modular using the MVC model & lighter with Virtual DOM
     Minimal HTML for basic prototype, not fully functional yet
       <div id="buffer1"><h2>Buffer 1</h2>
     </div>-->
-        <input class="mousetrap" id="save" type="button" value="Save" style="width: 50px; height: 30px; margin: 20px">
+        <input class="mousetrap" id="save" type="button" value="Save" onclick="saveCode()" style="width: 50px; height: 30px; margin: 20px">
 
         <input class="mousetrap" id="del" type="button" value="Load" style="width: 50px; height: 30px; margin: 20px;" onclick="">
         </form>

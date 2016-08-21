@@ -1,6 +1,8 @@
 var shortcut=require('./mousetrap.js');
 
 function control(){
+	var synth = window.speechSynthesis;
+	var storeCode;
 	var isPaused=true;
 	if('speechSynthesis' in window){
 
@@ -39,6 +41,28 @@ function control(){
 		synth.speak(speech);
     	//synth.resume();
 	    	return false;
-    }
+    	}
+	}
+  	
+  	/**Store the value in the text area, which is the input from the user, into a variable
+  	*/  
+    function saveCode(){
+    
+	storeCode = document.getElementById('text_field').value;
+	
+	/*if(storeCode.length!==0){
+		storeNode = document.createTextNode(storeCode);
+		document.getElementById('buffer1').appendChild(storeNode);
+		} */
+	}
+
+	/**Send the input text to the OSC server to play the music out
+	*/
+    function sendServer() {
+  	if(storeCode.length == null || storeCode.length == 0) {
+	  console.log('You haven\'t typed anything yet');
+	  return;
+  	}
 }
-}();
+};
+control();
