@@ -1,3 +1,5 @@
+/**@module*/
+// Functions associated with forms and buttons on index.html are defined here.
 var shortcut=require('./mousetrap.js');
 
 function control(){
@@ -49,7 +51,6 @@ function control(){
     function saveCode(){
     
 	storeCode = document.getElementById('code').value;
-// Functions associated with forms and buttons on index.html are defined here.
 
 var num=0;
 	function saveCode(){
@@ -59,6 +60,7 @@ var num=0;
 	/*if(storeCode.length!==0){
 		storeNode = document.createTextNode(storeCode);
 		document.getElementById('buffer1').appendChild(storeNode);
+<<<<<<< HEAD
 		} */
 	}
 

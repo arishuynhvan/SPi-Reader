@@ -30,9 +30,9 @@ If any issue with path/directories may involve in the future, it will be higly d
 
 ## To-do list:
 - [ ] Implement navigation by tab (minimal for now) for all display elements
-- [ ] Implement Speech Synthesis API for reading out values of the current target
-- [ ] Server communication with the Sonic-Pi main applications
-- [ ] Migrate to Reactjs (structure the view, store/model, controller properly)
+- [x] Implement Speech Synthesis API for reading out values of the current target
+- [x] Server communication with the Sonic-Pi main applications
+- [ ] ~~Migrate to Reactjs (structure the view, store/model, controller properly)~~
 - [X] Write the blog post
 - [ ] Finish up building of Sonic Pi from source code
 - [ ] Learn how to handle database with JSON
