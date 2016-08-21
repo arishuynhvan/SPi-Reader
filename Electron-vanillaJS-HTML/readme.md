@@ -1,7 +1,7 @@
 # Accompanying repository for the Electron guide
 
-First, install/upgrade to the latest nodejs and npm 
-Next, install all the dependencies using
+First, install/upgrade to the latest nodejs and npm.
+Next, clone this repository and install all the dependencies using
 ```
 npm install
 ```
