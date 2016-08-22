@@ -14,10 +14,10 @@ function control(){
 	else
 		alert("This window doesn't support Speech Synthesis API");
 
-	/**This function will extract the input from the start to the end of the line where the cursor is
-	Also it limits the return string to have 300 or lesscharacters
-	It replaces symbols with their English texts
-	@param: input
+	/** This function will extract the input from the start to the end of the line where the cursor is
+	  * Also it limits the return string to have 300 or lesscharacters
+	  * It replaces symbols with their English texts
+	  * @param: input
 	*/
 	function parseSpeech(input){
 		var parsedSpeech=input;
@@ -51,7 +51,7 @@ function control(){
 	}
 
 	/** Turns on or off text-to-speech feature
-	@param: event
+	  * @param: event
 	*/
 	function speechControl(e){
 		console.log('play/pause');
@@ -67,7 +67,6 @@ function control(){
 			speech = new SpeechSynthesisUtterance(input);
 			console.log('speaking');
 			synth.speak(speech);
-    		//synth.resume();
     		return false;
     	}
     }
@@ -78,7 +77,6 @@ function control(){
 
   		storeCode = document.getElementById('code').value;}
 
-  		var num=0;
 
 	/**Store the value in the text-field, which is the input from the user, into a variable
 	*/
