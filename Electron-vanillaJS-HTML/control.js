@@ -1,4 +1,3 @@
-//<<<<<<< Updated upstream
 /**@module*/
 // Functions associated with forms and buttons on index.html are defined here.
 var shortcut=require('./mousetrap.js');
