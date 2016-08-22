@@ -2,7 +2,7 @@
 
 ## Web-based IDE for Sonic Pi designed for accessibility:sunglasses: 
 
-Use browser console that supports Ruby as the interface. Create plugins in the console for screen-reader & for communicating with local Sonic Pi IDE
+Use browser console that supports Ruby as the interface. Create plugins in the console for screen-reader & for communicating with local Sonic Pi IDE.
 For documentation: https://doclets.io/arishuynhvan/SPi-Reader/basic-electron-display 
 
 ###Milestones:
