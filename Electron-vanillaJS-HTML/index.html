@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>SPi Reader</title>
-       
-
+    <script type="text/javascript" src="control.js"></script>
   </head>
   <body>
 <form>
@@ -14,19 +13,20 @@
 
  <fieldset>
    <!-- <input id="text_field" maxlength="100" size="1000" type="text" style="width: 200px; height: 100px;">-->
-    <textarea class="mousetrap" id="code" data-gramm="true" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: normal; font-size: 12px; transition: none; background: transparent !important;width:500px;height:200px;padding:20px"></textarea>  
-    <input class="mousetrap" id="submit_btn" type="button" value="Play" onclick="sendServer()" style="width: 50px; height: 30px;">
+<!-- <<<<<<< Updated upstream -->
+    <textarea class="mousetrap" id="code" data-gramm="true" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: normal; font-size: 12px; transition: none; background: transparent !important;width:500px;height:200px;padding:20px"></textarea>
+    <input class="mousetrap" id="submit_btn" type="button" value="Play" onclick="saveCode()" style="width: 50px; height: 30px;">
  </fieldset>
    <!-- <div class="buffer-view">
     Consider using JS to make this more modular using the MVC model & lighter with Virtual DOM
     Minimal HTML for basic prototype, not fully functional yet
       <div id="buffer1"><h2>Buffer 1</h2>
     </div>-->
+<!-- <<<<<<< Updated upstream-->
         <input class="mousetrap" id="save" type="button" value="Save" onclick="saveCode()" style="width: 50px; height: 30px; margin: 20px">
 
         <input class="mousetrap" id="load" type="button" value="Load" style="width: 50px; height: 30px; margin: 20px;" onclick="">
-        </form>
-<script type="text/javascript" src="control.js"></script>
+  </form>
 
 </body>
 </html>
@@ -35,5 +35,18 @@
     and Electron <script>document.write(process.versions.electron)</script>. <br>THIS IS A NOT A WORKING PROTOTYPE YET</h6>
    <!-- <div id="react-root" ><h1>React goes here</h1></div>
 
-  <script src="./build/bundle.js"></script>-->
-  
+  <script src="./build/bundle.js"></script>
+<<<<<<< Updated upstream
+
+======= -->
+
+  </body>
+ <script type="text/javascript" src="control.js"s></script>
+      <!--    <script type="text/babel" src="./src/entry.js"></script>
+        <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <script src="https://npmcdn.com/jquery@3.1.0/dist/jquery.min.js"></script>
+    <script src="https://npmcdn.com/remarkable@1.6.2/dist/remarkable.min.js"></script>-->
+</html>
+<!-- >>>>>>> Stashed changes -->
