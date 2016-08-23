@@ -78,7 +78,6 @@ function control(){
   		storeCode = document.getElementById('code').value;}
 
 
-
 	/**Send the input text to the OSC server to play the music out
 	*/
 	function sendServer() {
