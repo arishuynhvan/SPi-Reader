@@ -78,11 +78,6 @@ function control(){
   		storeCode = document.getElementById('code').value;}
 
 
-	/**Store the value in the text-field, which is the input from the user, into a variable
-	*/
-	function saveCode(){
-		var storeCode = document.getElementById('code').value;
-	}
 
 	/**Send the input text to the OSC server to play the music out
 	*/
