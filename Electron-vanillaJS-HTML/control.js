@@ -13,7 +13,7 @@ function control(){
 	}
 	else
 		alert("This window doesn't support Speech Synthesis API");
-}
+
 
 /** This function will extract the input from the start to the end of the line where the cursor is
   * Also it limits the return string to have 300 or lesscharacters
@@ -149,6 +149,7 @@ function sendServer(storeCode) {
 			}
 		}
 		);
-	control(); 
+	
 }
-
+};
+control(); 
