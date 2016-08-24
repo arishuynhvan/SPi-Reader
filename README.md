@@ -10,7 +10,7 @@ For documentation: https://doclets.io/arishuynhvan/SPi-Reader/basic-electron-dis
 - [x] Select & Implement API for screen reader
 - [x] Integrate documentation for JS files
 - [ ] Write a guideline on how to type comments for documentation
-- [ ] Release front-end web app v0.1.0 by Mon, 22th Aug 2016
+- [x] Release app v0.1.0 with core functionalities by Mon, 22th Aug 2016
 - [ ] Schedule tests with users for feedback 
 - [ ] Easy installation package
 - [ ] Release cross-platform front-end web app v1.0.0 by Mon, 27th Aug 2016
