@@ -2,21 +2,20 @@
 // Functions associated with forms and buttons on index.html are defined here.
 var shortcut=require('./mousetrap.js');
 
-function control(){
-	var synth = window.speechSynthesis;
-	var storeCode;
-	var isPaused=true;
-	if('speechSynthesis' in window){
 
-		console.log('there is speechSynthesis');
-		shortcut.bind('mod+alt', function(e){speechControl(e)});
-	}
-	else
-		alert("This window doesn't support Speech Synthesis API");
+var synth = window.speechSynthesis;
+var storeCode;
+var isPaused=true;
+if('speechSynthesis' in window){
 
+	console.log('there is speechSynthesis');
+	shortcut.bind('mod+alt', function(e){speechControl(e)});
+}
+else
+	alert("This window doesn't support Speech Synthesis API");
 
 	/** This function will extract the input from the start to the end of the line where the cursor is
-  	* Also it limits the return string to have 300 or lesscharacters
+  	* Todo: limits the return string to have 300 or lesscharacters
   	* It replaces symbols with their English texts
   	* @param: input
   	*/
@@ -113,5 +112,4 @@ function control(){
 
 			});
 	}
-}
-control(); 
+
