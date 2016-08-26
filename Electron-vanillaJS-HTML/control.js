@@ -104,6 +104,8 @@ else
 		console.log('playing: ' + storeCode);
 		var exec = require('child_process').exec, child;
 
+		//TO-DO: Must handle the file convention separately for Mac & Windows
+		//For now, remember to change the backslash to slash when using Mac
 		child = exec('client\\SPi-reader.rb ' + storeCode,
 			function (error, stdout, stderr) {
 				console.log('stdout: ' + stdout);
