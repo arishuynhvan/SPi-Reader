@@ -9,7 +9,7 @@ var storeCode;
 if('speechSynthesis' in window){
 
 	console.log('there is speechSynthesis');
-	shortcut.bind('mod+alt', function(e){speechControl(e)});
+	shortcut.bind('mod+shift', function(e){speechControl(e)});
 }
 else
 	alert("This window doesn't support Speech Synthesis API");
@@ -27,7 +27,7 @@ else
   		"{", "}", "$", "?",
   		"!", "<", ">", "=", "\\", "/"];
 
-  		var spellOut=[" period ", " left bracket ", " right bracket ", " colon ", " semi-colon ",
+  		var spellOut=[" dot ", " left bracket ", " right bracket ", " colon ", " semi-colon ",
   		" left curly bracket ", " right curly bracket ", " dollar sign ", " question mark ",
   		" exclamation mark ", " less than ", " more than ", " is ", " slash ", " backslash "];
 
@@ -85,9 +85,12 @@ else
 
 
 	function formatCommands(storeCode) {
-		var newCode = storeCode.replace(new RegExp( "\\n", "g" ), "; ");
-		newCode = "\"" + storeCode + "\"";
-		return newCode
+		var newCode = storeCode.replace(new RegExp( "\n", "g" ), "; ");
+		newCode = newCode.replace("do", "{");
+		newCode = newCode.replace("end", "}");
+		console.log("new code: "+newCode);
+		newCode = "\"" + newCode + "\"";
+		return newCode;
 	}
 
 	function sendServer(storeCode) {
@@ -101,7 +104,9 @@ else
 		console.log('playing: ' + storeCode);
 		var exec = require('child_process').exec, child;
 
-		child = exec('./client/SPi-reader.rb ' + storeCode,
+		//TO-DO: Must handle the file convention separately for Mac & Windows
+		//For now, remember to change the backslash to slash when using Mac
+		child = exec('client\\SPi-reader.rb ' + storeCode,
 			function (error, stdout, stderr) {
 				console.log('stdout: ' + stdout);
 				console.log('stderr: ' + stderr);
