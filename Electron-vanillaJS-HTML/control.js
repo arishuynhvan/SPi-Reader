@@ -5,7 +5,7 @@ var shortcut=require('./mousetrap.js');
 
 var synth = window.speechSynthesis;
 var storeCode;
-var isPaused=true;
+
 if('speechSynthesis' in window){
 
 	console.log('there is speechSynthesis');
@@ -47,7 +47,7 @@ else
   			}
   		});
 
-  		console.log(parsedSpeech);
+  		//console.log(parsedSpeech);
   		return parsedSpeech;
   	}
 
@@ -56,9 +56,8 @@ else
 	  * @param: event
 	  */
 	  function speechControl(e){
-	  	console.log('play/pause');
-	  	if(!isPaused){
-	  		isPause=false;
+	  	//console.log('play/pause');
+	  	if(synth.speaking){
 	  		synth.pause();
 	  		synth.cancel();
 	  	}
