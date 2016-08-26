@@ -9,7 +9,7 @@ var storeCode;
 if('speechSynthesis' in window){
 
 	console.log('there is speechSynthesis');
-	shortcut.bind('mod+alt', function(e){speechControl(e)});
+	shortcut.bind('mod+shift', function(e){speechControl(e)});
 }
 else
 	alert("This window doesn't support Speech Synthesis API");
