@@ -23,7 +23,8 @@ class SPiReader
   def test_connection!
     begin
 	  OSC::Server.new(PORT)
-	  abort("Error: Sonic Pi not listening on #{PORT}")
+    #TO-DO: Write an if branch here: if (!windows)
+	  #abort("Error: Sonic Pi not listening on #{PORT}")
 	rescue
 	  puts 'Sonic-pi running'
 	end
