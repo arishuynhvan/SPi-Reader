@@ -1,7 +1,7 @@
 /**@module*/
 // Functions associated with forms and buttons on index.html are defined here.
 var shortcut=require('./mousetrap.js');
-
+var OSName = determineOS();
 
 var synth = window.speechSynthesis;
 var storeCode;
@@ -13,6 +13,18 @@ if('speechSynthesis' in window){
 }
 else
 	alert("This window doesn't support Speech Synthesis API");
+
+	function determineOS() {
+		OSName = navigator.platform;
+		console.log('running on: ' + OSName);
+
+		if (navigator.appVersion.indexOf("Win")!= -1) OSName="Win";
+		if (navigator.appVersion.indexOf("Mac")!= -1) OSName="Mac";
+		if (navigator.appVersion.indexOf("X11")!= -1) OSName="Unix";
+		if (navigator.appVersion.indexOf("Linux")!= -1) OSName="Linux";
+
+		return OSName;
+	}
 
 	/** This function will extract the input from the start to the end of the line where the cursor is
   	* Todo: limits the return string to have 300 or lesscharacters
@@ -74,23 +86,33 @@ else
 
 		/**Store the value in the text area, which is the input from the user, into a variable
 		*/
-		function saveCode(){
-    	//Store the value in the text-field, which is the input from the user, into a variable
+	function saveCode(){
+    //Store the value in the text-field, which is the input from the user, into a variable
     	var storeCode = document.getElementById('code').value;
-    	console.log('saveCode() called');
+    	//console.log('saveCode() called');
     	console.log(storeCode);
 		// Functions associated with forms and buttons on index.html are defined here.
 		sendServer(storeCode);
 	}
 
-
 	function formatCommands(storeCode) {
 		var newCode = storeCode.replace(new RegExp( "\n", "g" ), "; ");
 		newCode = newCode.replace("do", "{");
 		newCode = newCode.replace("end", "}");
+
 		console.log("new code: "+newCode);
 		newCode = "\"" + newCode + "\"";
 		return newCode;
+	}
+
+	function OSBasedClientCommand() {
+		var clientCommand;
+		switch(OSName) {
+			case 'Win': clientCommand = 'client\\SPi-reader.rb '; break;
+			case 'Mac': clientCommand = './client/SPi-reader.rb '; break;
+			default: clientCommand = './client/SPi-reader.rb '; // Probably the same for Unix and Linux
+		}
+		return clientCommand;
 	}
 
 	function sendServer(storeCode) {
@@ -100,20 +122,19 @@ else
 		}
 
 		storeCode = formatCommands(storeCode);
-
 		console.log('playing: ' + storeCode);
-		var exec = require('child_process').exec, child;
 
 		//TO-DO: Must handle the file convention separately for Mac & Windows
 		//For now, remember to change the backslash to slash when using Mac
-		child = exec('client\\SPi-reader.rb ' + storeCode,
+		var clientCommand = OSBasedClientCommand();
+		var exec = require('child_process').exec, child;
+		child = exec(clientCommand + storeCode,
 			function (error, stdout, stderr) {
 				console.log('stdout: ' + stdout);
 				console.log('stderr: ' + stderr);
 				if (error !== null) {
 					console.log('exec error: ' + error);
 				}
-
 			});
-	}
 
+		}
