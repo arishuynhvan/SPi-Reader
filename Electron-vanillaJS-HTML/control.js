@@ -1,8 +1,9 @@
 /**@module*/
 // Functions associated with forms and buttons on index.html are defined here.
 var shortcut=require('./mousetrap.js');
-var OSName = determineOS();
+var fs = require('fs');
 
+var OSName = determineOS();
 var synth = window.speechSynthesis;
 var storeCode;
 
@@ -137,4 +138,14 @@ else
 				}
 			});
 
+		}
+
+		function writeBufferToFile() {
+			fs.writeFile("buffers/test", storeCode, function(err)) {
+				if(err) {
+					return console.log(err);
+				}
+
+				console.log("Buffer saved!");
+			}
 		}
