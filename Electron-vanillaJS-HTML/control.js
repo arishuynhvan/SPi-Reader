@@ -141,11 +141,11 @@ else
 		}
 
 		function writeBufferToFile() {
-			fs.writeFile("buffers/test", storeCode, function(err)) {
+			fs.writeFile("buffers/test.txt", storeCode, function(err) {
 				if(err) {
 					return console.log(err);
 				}
 
 				console.log("Buffer saved!");
-			}
+			});
 		}
