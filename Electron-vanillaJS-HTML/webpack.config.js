@@ -9,7 +9,7 @@ The context property is an absolute path. It's used when resolving the location 
 and since our entry file is ./src/entry.js we'll put __dirname + '/src' in the context property 
 and entry.js in the entry property.*/
   context: __dirname + '/src',
-  entry: './entry.js',
+  entry: '\\..\\app.js',
 
   output: {
     filename: 'bundle.js',
@@ -35,12 +35,15 @@ The above instructs Webpack to output the file bundle.js in the path __dirname +
       //Highly important to make the loader transpile jsx into react-compatible js by default
       query:
         {
-          presets:['react']
+          presets:['es2015', 'react', 'stage-0']
         } 
       }
     ]
-  }
+  },
   //exclude propery is for ingoring certain file types while bundling
+  resolve: {
+    extensions: ['', '.js', '.json'] 
+  }
   };
  
 
