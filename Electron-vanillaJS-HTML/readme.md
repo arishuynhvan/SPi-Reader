@@ -40,7 +40,7 @@ If any issue with path/directories may involve in the future, it will be higly d
 - [x] Implement Speech Synthesis API for reading out values of the current target
 - [x] Server communication with the Sonic-Pi main applications
 - [x] Migrate to Reactjs (structure the view, store/model, controller properly)
-- [X] Write the blog post
+- [x] Write the blog post
 - [ ] ~~Finish up building of Sonic Pi from source code~~
 - [ ] Hot Reloader Module for webpack => speed up development
 - [ ] Learn how to handle database with JSON
@@ -56,7 +56,7 @@ Electron now does support ARM.
 
 Not so sure what #2 & #3 are necessary
 
-Reflection:
+#### Reflection:
 1. If we want to build a standalone app for accessbility users with its own screen reader (i.e. speech synthesizer integration), why don't we might as well working on Sonic Pi original project?
 
 2. Considering that Sonic Pi was built with Qt which has GTK+ browser, should we use GAIL module as mentioned in this article - [Make Your Application Accessible with Accerciser](http://www.linuxjournal.com/article/9991) ?
