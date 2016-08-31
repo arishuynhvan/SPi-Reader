@@ -30,7 +30,7 @@ npm run start
 in 2 distinct termals or cmd
 
 
-Process management for Electron (outdate):
+Process management for Electron (outdated):
  
 |    CPU   |   Memory      |  Disk |  Network |
 |----------|:-------------:|------:|---------:|
