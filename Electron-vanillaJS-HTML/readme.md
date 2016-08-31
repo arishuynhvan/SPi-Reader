@@ -29,11 +29,8 @@ npm run start
 ```
 in 2 distinct termals or cmd
 
-- [ ] Fix the bug above with a loading page [spinner + application name].
 
-Reload with Ctrl+R during incremental build
-
-Process management for Electron:
+Process management for Electron (outdate):
  
 |    CPU   |   Memory      |  Disk |  Network |
 |----------|:-------------:|------:|---------:|
@@ -57,8 +54,10 @@ If any issue with path/directories may involve in the future, it will be higly d
 - [x] Migrate to Reactjs (structure the view, store/model, controller properly)
 - [x] Write the blog post
 - [ ] ~~Finish up building of Sonic Pi from source code~~
-- [ ] Hot Module Replacement for webpack => speed up development
+- [x] Hot Module Replacement for webpack => speed up development
 - [ ] Learn how to handle database with JSON
+- [ ] Fix the bug above with a loading page [spinner + application name].
+- [ ] Updated the Process Management with the latest data
 
 
 ### Note for running Electron on Raspberry Pi (untested):
