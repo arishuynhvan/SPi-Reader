@@ -2,5 +2,3 @@
 node_modules
 *.log
 .babelrc
-app.js
-src/Main.js
