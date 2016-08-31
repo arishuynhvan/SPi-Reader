@@ -10,15 +10,26 @@ It's recommended to set electron as global package
 npm install --save-dev -g electron-prebuilt@latest
 ```
 
-Build and compile JS files
+Start the application for incremental development & hot reload:
 ```
-npm run build
+npm run dev
 ```
 
-Start the application
+Currently, there is a small bug when the application is started in the development mode that is reported in the console of of devTool. The reason is that the build of webdev-server is much slower than the start of the app so the require scripts for React components won't be loaded at the start of the app.
+
+For now, just refresh the page when the build is finished (' webpack: bundle is now VALID.' shows up in the terminal/cmd)
+
+Alternatively, one can run
+```
+npm run watch
+```
+and
 ```
 npm run start
 ```
+in 2 distinct termals or cmd
+
+- [ ] Fix the bug above with a loading page [spinner + application name].
 
 Reload with Ctrl+R during incremental build
 
@@ -34,6 +45,10 @@ http://www.juxt.com/pov/thoughts/building-native-desktop-apps-with-web-tech
 However, the package.json and webpack.config.js in the tutorial are outdated. Recommend using 'npm install' directly after cloning this repo locally because it contains all the compatible packages and relatively updated syntax for webpack configuration.
 
 If any issue with path/directories may involve in the future, it will be higly due to change of syntax in webpack again.
+
+### Limitation of Hot Reload:
+- This is only tested for react components
+- It may not work for non-react components
 
 ## To-do list:
 - [x] Implement navigation by tab (minimal for now) for input elements
