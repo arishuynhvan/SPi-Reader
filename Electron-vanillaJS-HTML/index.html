@@ -7,13 +7,12 @@
   </head>
   <body>
   <div id ="app"></div>
-    <h1>SPi Reader</h1>
-
-  <div id="displaytext">Let's SPi up the music! Press tab key to navigate around workspace</div>
+<!-- To be read out onload by default-->
+  <div id="instruction">Let's SPi up the music! Press tab key to navigate around workspace</div>
 
  <fieldset>
     <textarea class="mousetrap" id="code" data-gramm="true" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: normal; font-size: 12px; transition: none; background: transparent !important;width:500px;height:200px;padding:20px"></textarea>
-    <input class="mousetrap" id="submit_btn" type="button" value="Play" onclick="saveCode()" style="width: 50px; height: 30px;">
+    <input class="mousetrap" id="play" type="button" value="Play" onclick="saveCode()" style="width: 50px; height: 30px;">
  </fieldset>
         <input class="mousetrap" id="save" type="button" value="Save" onclick="" style="width: 50px; height: 30px; margin: 20px">
 

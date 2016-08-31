@@ -27,6 +27,7 @@ module.exports = {
   */
 
   resolveLoader: { root: __dirname + "node_modules" },
+  devtool: 'source-map',
 
    /*Webpack supports a number of loaders for different file types.
    These are specified as an array of objects in module.loaders.
@@ -36,10 +37,13 @@ module.exports = {
    module: {
     loaders: [
     { test: /\.js$/,
-
-      loaders: ["react-hot","babel-loader"], exclude: /node_modules/,
+      loaders:["react-hot","babel-loader"],
+      exclude: /node_modules/
+    },
+    {
+      test: /\.scss$/,
+      loaders: ["style",'css?sourceMap', 'sass?sourceMap'] 
       //Highly important to make the loader transpile jsx into react-compatible js by default
-
     }
     ]
   },
@@ -48,7 +52,7 @@ module.exports = {
     extensions: ['', '.js', '.json']
   },
   plugins:[
-    new webpack.HotModuleReplacementPlugin()
+  new webpack.HotModuleReplacementPlugin()
   ]
 };
 

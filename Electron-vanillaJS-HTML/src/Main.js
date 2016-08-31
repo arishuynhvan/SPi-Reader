@@ -14,13 +14,17 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 const styles = {
   container: {
     textAlign: 'center',
-    paddingTop: 200,
+    backgroundColor: 'black',
+    color: 'lime' 
   },
+  button:{
+    margin: '20px'
+  }
 };
 
 const muiTheme = getMuiTheme({
   palette: {
-    accent1Color: deepOrange500,
+    accent1Color: deepOrange500
   },
 });
 
@@ -68,13 +72,14 @@ class Main extends Component {
           >
             1-2-3-4-5
           </Dialog>
-          <h1>Material-UI</h1>
+          <h1>Sonic Pi Reader</h1>
           <h2>Reload??!</h2>
           <hr/>
           <RaisedButton
             label="Super Secret Password"
             secondary={true}
             onTouchTap={this.handleTouchTap}
+            style = {styles.button}
           />
         </div>
       </MuiThemeProvider>
