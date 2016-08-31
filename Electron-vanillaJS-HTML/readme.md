@@ -57,7 +57,7 @@ If any issue with path/directories may involve in the future, it will be higly d
 - [x] Hot Module Replacement for webpack => speed up development
 - [ ] Learn how to handle database with JSON
 - [ ] Fix the bug above with a loading page [spinner + application name].
-- [ ] Updated the Process Management with the latest data
+- [ ] Update the Process Management with the latest data
 
 
 ### Note for running Electron on Raspberry Pi (untested):
