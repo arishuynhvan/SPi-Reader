@@ -42,7 +42,7 @@ If any issue with path/directories may involve in the future, it will be higly d
 - [x] Migrate to Reactjs (structure the view, store/model, controller properly)
 - [x] Write the blog post
 - [ ] ~~Finish up building of Sonic Pi from source code~~
-- [ ] Hot Reloader Module for webpack => speed up development
+- [ ] Hot Module Replacement for webpack => speed up development
 - [ ] Learn how to handle database with JSON
 
 
