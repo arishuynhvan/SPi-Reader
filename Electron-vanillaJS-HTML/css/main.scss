@@ -1,0 +1,21 @@
+
+//Variables:
+$default-font: 'Roboto', sans-serif;
+$theme-font: 'Monda', sans-serif;
+$title-font: 'Russo One', sans-serif;
+
+body{
+  font-family: $theme-font;
+  background-color: black;
+  color: white;
+}
+
+.title{
+  font-family: $title-font;
+  font-size: 65px;
+}
+
+#footer{
+  position: absolute;
+  bottom: 0;
+}

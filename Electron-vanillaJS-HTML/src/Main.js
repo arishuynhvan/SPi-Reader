@@ -6,27 +6,22 @@
 import React, {Component} from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import Dialog from 'material-ui/Dialog';
-import {deepOrange500} from 'material-ui/styles/colors';
+//import {deepOrange500} from 'material-ui/styles/colors';
 import FlatButton from 'material-ui/FlatButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 
 const styles = {
   container: {
-    textAlign: 'center',
-    backgroundColor: 'black',
-    color: 'lime' 
+    textAlign: 'center'
   },
   button:{
     margin: '20px'
   }
 };
 
-const muiTheme = getMuiTheme({
-  palette: {
-    accent1Color: deepOrange500
-  },
-});
+const muiTheme = getMuiTheme(darkBaseTheme);
 
 class Main extends Component {
   constructor(props, context) {
@@ -72,8 +67,7 @@ class Main extends Component {
           >
             1-2-3-4-5
           </Dialog>
-          <h1>Sonic Pi Reader</h1>
-          <h2>Reload??!</h2>
+          <h1 className = "title">Sonic Pi Reader</h1>
           <hr/>
           <RaisedButton
             label="Super Secret Password"
