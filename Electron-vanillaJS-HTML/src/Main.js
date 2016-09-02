@@ -12,14 +12,11 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import Output from './components/terminal/output'
-const styles = {
-  container: {
-    textAlign: 'center'
-  },
-  button:{
-    margin: '20px'
-  }
-};
+// const styles = {
+//   container: {
+//     textAlign: 'center'
+//   }
+// };
 
 const muiTheme = getMuiTheme(darkBaseTheme);
 
@@ -58,7 +55,7 @@ class Main extends Component {
 
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <div style={styles.container}>
+        <div >
 
           <h1 className = "title">Sonic Pi Reader</h1>
           <Output/>

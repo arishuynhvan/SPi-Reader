@@ -11,11 +11,13 @@ body{
   font-family: $theme-font;
   background-color: black;
   color: white;
+  text-align: center;
 }
 
 .title{
   font-family: $title-font;
   font-size: 65px;
+  margin: 20px;
 }
 
 #footer{
@@ -32,6 +34,10 @@ input{
   display: block;
   border:0;
   font-size: 20px;
+}
+
+#intro{
+  padding: 20px;
 }
 .cmdLine{
   float: right;
