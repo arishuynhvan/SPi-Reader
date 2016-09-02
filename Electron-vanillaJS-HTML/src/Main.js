@@ -11,7 +11,7 @@ import FlatButton from 'material-ui/FlatButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
-
+import Output from './components/terminal/output'
 const styles = {
   container: {
     textAlign: 'center'
@@ -59,22 +59,10 @@ class Main extends Component {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <div style={styles.container}>
-          <Dialog
-            open={this.state.open}
-            title="Super Secret Password"
-            actions={standardActions}
-            onRequestClose={this.handleRequestClose}
-          >
-            1-2-3-4-5
-          </Dialog>
+
           <h1 className = "title">Sonic Pi Reader</h1>
+          <Output/>
           <hr/>
-          <RaisedButton
-            label="Super Secret Password"
-            secondary={true}
-            onTouchTap={this.handleTouchTap}
-            style = {styles.button}
-          />
         </div>
       </MuiThemeProvider>
     );
@@ -82,3 +70,22 @@ class Main extends Component {
 }
 
 export default Main;
+/*
+
+<Dialog
+            open={this.state.open}
+            title="Super Secret Password"
+            actions={standardActions}
+            onRequestClose={this.handleRequestClose}
+          >
+            1-2-3-4-5
+          </Dialog>
+<RaisedButton
+            label="Super Secret Password"
+            secondary={true}
+            onTouchTap={this.handleTouchTap}
+            style = {styles.button}
+          />
+
+
+          */

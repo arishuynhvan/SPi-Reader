@@ -3,6 +3,9 @@
 $default-font: 'Roboto', sans-serif;
 $theme-font: 'Monda', sans-serif;
 $title-font: 'Russo One', sans-serif;
+$cmd-font: 'Inconsolata', monospace;
+$cmd-txt-color: #FFEA00;
+
 
 body{
   font-family: $theme-font;
@@ -18,4 +21,20 @@ body{
 #footer{
   position: absolute;
   bottom: 0;
+}
+
+input{
+  font-family: $cmd-font;
+  background-color: black;
+  color: $cmd-txt-color;
+  text-align: left;
+  width: 100%;
+  display: block;
+  border:0;
+  font-size: 20px;
+}
+.cmdLine{
+  float: right;
+  width: 95%;
+    display: block;
 }
