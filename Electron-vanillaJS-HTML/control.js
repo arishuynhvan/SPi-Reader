@@ -93,7 +93,7 @@ else
     	//console.log('saveCode() called');
     	console.log(storeCode);
 		// Functions associated with forms and buttons on index.html are defined here.
-		sendServer(storeCode);
+		return storeCode;
 	}
 
 	function formatCommands(storeCode) {
@@ -137,15 +137,27 @@ else
 					console.log('exec error: ' + error);
 				}
 			});
-
 		}
 
-		function writeBufferToFile() {
-			fs.writeFile("buffers/test.txt", storeCode, function(err) {
-				if(err) {
-					return console.log(err);
-				}
+	function play() {
+		var savedCode = saveCode();
+		sendServer(savedCode);
+	}
+	
+	function writeBufferToFile() {
+		saveCode();
 
-				console.log("Buffer saved!");
-			});
+		if(storeCode == undefined) {
+			console.log('storeCode is undefined');
 		}
+		fs.writeFile("buffers/test.txt", storeCode, function(err) {
+			if(err) {
+				return console.log(err);
+			}
+			console.log("Buffer saved!");
+		});
+	}
+
+	function loadBufferFromFile() {
+
+	}
