@@ -4,13 +4,16 @@ $default-font: 'Roboto', sans-serif;
 $theme-font: 'Monda', sans-serif;
 $title-font: 'Russo One', sans-serif;
 $cmd-font: 'Inconsolata', monospace;
-$cmd-txt-color: #FFEA00;
+$cmd-txt-color: #40C4FF;
+$btn-width : 200px;
+$backgroundColor: #263238;
+
 
 
 body{
   font-family: $theme-font;
-  background-color: black;
-  color: white;
+  background-color:  $backgroundColor;
+  color: #B2EBF2;
 
 }
 
@@ -28,7 +31,7 @@ body{
 
 input{
   font-family: $cmd-font;
-  background-color: black;
+  background-color: $backgroundColor;
   color: $cmd-txt-color;
   text-align: left;
   width: 100%;
@@ -54,4 +57,10 @@ input{
 }
 .btns{
   margin: 20px;
+  width: $btn-width;
+}
+#control-btns{
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
 }

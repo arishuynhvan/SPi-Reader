@@ -7,28 +7,25 @@
 import React, {Component} from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 
-
-
   class ControlButtons extends Component {
-
-    /** TO-DO:
+    /** TO-DO: Access the value of the buttons & specify them
       *
       */
     render() {
       return (
-        <div >
+        <div id="control-btns">
         <RaisedButton
         label="Save"
         className="btns"
-            secondary={true}/>
+            primary={true}/>
         <RaisedButton
         label="Play"
         className="btns"
-            secondary={true}/>
+            primary={true}/>
             <RaisedButton
         label="Switch to terminal"
             className="btns"
-            secondary={true}/>
+            primary={true}/>
         </div>
         );
     }

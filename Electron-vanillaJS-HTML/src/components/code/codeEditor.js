@@ -8,9 +8,14 @@ import React, {Component} from 'react';
 import TextField from 'material-ui/TextField';
 
 var fieldStyle={
-      width: "80%",
+      width: "95%",
       margin: "20px"
     };
+
+var labelStyle={
+  fontSize: "30px",
+  top:"15px"
+}
 
   class CodeEditor extends Component {
 
@@ -20,7 +25,8 @@ var fieldStyle={
     render() {
       return (
         <TextField className="mousetrap" id="code" multiLine={true}
-        style={fieldStyle}>
+        style={fieldStyle} rowsMax={15} floatingLabelText="Code Editor"
+        floatingLabelStyle={labelStyle}>
         </TextField>
         );
     }
