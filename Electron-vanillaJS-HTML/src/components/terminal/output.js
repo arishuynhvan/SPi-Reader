@@ -21,7 +21,7 @@
           <input value ="For example, 'load my_song_1'" readOnly/>
           </div>
           <div className ="input-line">
-            <div className ="prompt">$<input className = "cmdLine" autoFocus/></div>
+            <div className ="prompt">$><input className = "cmdLine" autoFocus/></div>
           </div>
         </output>
         );

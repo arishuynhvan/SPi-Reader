@@ -11,10 +11,11 @@ import FlatButton from 'material-ui/FlatButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
-import Output from './components/terminal/output'
+import Output from './components/terminal/output';
+import CodeRegion from './components/code/codeEditor';
 // const styles = {
 //   container: {
-//     textAlign: 'center'
+//     textAlign: 'left'
 //   }
 // };
 
@@ -55,11 +56,12 @@ class Main extends Component {
 
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <div >
+        <div>
 
           <h1 className = "title">Sonic Pi Reader</h1>
           <Output/>
           <hr/>
+          <CodeRegion/>
         </div>
       </MuiThemeProvider>
     );

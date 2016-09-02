@@ -11,13 +11,14 @@ body{
   font-family: $theme-font;
   background-color: black;
   color: white;
-  text-align: center;
+
 }
 
 .title{
   font-family: $title-font;
   font-size: 65px;
   margin: 20px;
+  text-align: center;
 }
 
 #footer{
@@ -42,5 +43,12 @@ input{
 .cmdLine{
   float: right;
   width: 95%;
-    display: block;
+  display: block;
+}
+
+//Consider mixing
+
+//#code{style="z-index: auto; position: relative; line-height: normal; font-size: 12px; transition: none; background: transparent !important;width:500px;height:200px;padding:20px"}
+#code{
+  text-align: left;
 }
