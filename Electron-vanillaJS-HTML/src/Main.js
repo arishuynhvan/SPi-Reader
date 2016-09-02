@@ -13,6 +13,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import Output from './components/terminal/output';
 import CodeRegion from './components/code/codeEditor';
+import ControlButtons from './components/code/buttons';
 // const styles = {
 //   container: {
 //     textAlign: 'left'
@@ -62,6 +63,7 @@ class Main extends Component {
           <Output/>
           <hr/>
           <CodeRegion/>
+          <ControlButtons/>
         </div>
       </MuiThemeProvider>
     );
