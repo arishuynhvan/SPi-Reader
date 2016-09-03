@@ -16,5 +16,5 @@ For documentation: https://doclets.io/arishuynhvan/SPi-Reader/basic-electron-dis
 - [ ] Release cross-platform front-end web app v1.0.0 by Mon, 27th Aug 2016
 - [ ] Test on Raspberry Pi
 - [ ] Design Accessibility Test 
-- [ ] UI Refresh
+- [x] UI Refresh
 - [ ] UX Design - Onboarding experience
