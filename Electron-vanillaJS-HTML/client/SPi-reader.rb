@@ -5,7 +5,7 @@
 require_relative 'SPi'
 
 def args
-  ARGV.join(' ')
+  ARGV.join(" ")
 end
 
 def run

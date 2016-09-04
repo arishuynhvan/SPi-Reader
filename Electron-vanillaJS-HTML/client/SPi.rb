@@ -9,10 +9,10 @@ class SPiReader
   PORT = 4557
   GUI_ID = 'SPi-Reader'
 
-  STOP_ARG = 'stop-all-jobs'
-  START_RECORDING_ARG = 'start-recording'
-  STOP_RECORDING_ARG = 'stop-recording'
-  SAVE_RECORDING_ARG = 'save-recording'
+  STOP_ARG = 'SAJ'
+  START_RECORDING_ARG = 'SRR'
+  STOP_RECORDING_ARG = 'SOR'
+  SAVE_RECORDING_ARG = 'SVR'
 
   RUN_COMMAND = '/run-code'
   STOP_COMMAND = '/stop-all-jobs'
@@ -21,8 +21,12 @@ class SPiReader
   SAVE_RECORDING_COMMAND = '/save-recording'
 
   def identifyCommand(args)
-    puts case args[0]
+    runcommand = args
+    args = args.split(" ")
 
+    puts 'args[0]' + ' ' + args[0]
+    
+    puts case (args[0])
     when STOP_ARG
       stop()
 
@@ -33,10 +37,12 @@ class SPiReader
       stop_recording()
 
     when SAVE_RECORDING_ARG
+      args[1].slice!(0)
+      #puts 'args[1]' + ' ' + args[1]
       save_recording(args[1])
 
     else
-      run(args)
+      run(runcommand)
     end
   end
 
@@ -57,6 +63,7 @@ class SPiReader
   end
 
   def save_recording(filename)
+    puts filename
     send_command(SAVE_RECORDING_COMMAND, filename)
   end
 
@@ -74,7 +81,8 @@ class SPiReader
 
   def send_command(call_type, command=nil)
     prepared_command = OSC::Message.new(call_type, GUI_ID, command)
-	client.send(prepared_command)
+    puts prepared_command
+    client.send(prepared_command)
   end
   
   def client

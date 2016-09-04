@@ -7,10 +7,10 @@ var synth = window.speechSynthesis;
 var OSName = determineOS();
 var storeCode;
 
-const STOP_ARG = 'stop-all-jobs';
-const START_RECORDING_ARG = 'start-recording';
-const STOP_RECORDING_ARG = 'stop-recording';
-const SAVE_RECORDING_ARG = 'save-recording';
+const STOP_ARG = 'SAJ';
+const START_RECORDING_ARG = 'SRR';
+const STOP_RECORDING_ARG = 'SOR';
+const SAVE_RECORDING_ARG = 'SVR';
 
 if('speechSynthesis' in window){
 
@@ -106,6 +106,7 @@ else
 
 	function startRecording() {
 		sendServer(false, START_RECORDING_ARG);
+		play();
 	}
 
 	function stopRecording() {
@@ -114,8 +115,11 @@ else
 	}
 
 	function saveRecording() {
-		console.log('Saving Recording');
-		var filename = 'test';
+		//var filepath = '/Users/ravi/Documents/SPi-Reader/music/';
+		var filepath = '~/Documents/'; // put slash at the end
+
+		var date = new Date();
+		var filename = filepath + 'sonic-pi-' + date.getTime() + '.wav';
 		sendServer(false, SAVE_RECORDING_ARG + ' ' + filename);
 		console.log('Saved Recording: ' + filename);
 	}
@@ -157,9 +161,10 @@ else
 	    }
 
 		var clientCommand = OSBasedClientCommand();
-		var exec = require('child_process').exec, child;
+		var command = clientCommand + code;
 
-		child = exec(clientCommand + code,
+		var exec = require('child_process').exec, child;
+		child = exec(command,
 			function (error, stdout, stderr) {
 				console.log('stdout: ' + stdout);
 				console.log('stderr: ' + stderr);
