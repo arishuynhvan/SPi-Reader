@@ -12,11 +12,13 @@ class SPiReader
   STOP_ARG = 'stop-all-jobs'
   START_RECORDING_ARG = 'start-recording'
   STOP_RECORDING_ARG = 'stop-recording'
+  SAVE_RECORDING_ARG = 'save-recording'
 
   RUN_COMMAND = '/run-code'
   STOP_COMMAND = '/stop-all-jobs'
   START_RECORDING_COMMAND = '/start-recording'
   STOP_RECORDING_COMMAND = '/stop-recording'
+  SAVE_RECORDING_COMMAND = '/save-recording'
 
   def identifyCommand(args)
     puts case args[0]
@@ -27,7 +29,10 @@ class SPiReader
       start_recording()
 
     when STOP_RECORDING_ARG
-      stop-recording()
+      stop_recording()
+
+    when SAVE_RECORDING_ARG
+      save_recording()
 
     else
       run(args)
@@ -48,6 +53,10 @@ class SPiReader
 
   def stop_recording
     send_command(STOP_RECORDING_COMMAND)
+  end
+
+  def save_recording
+    send_command(SAVE_RECORDING_COMMAND)
   end
 
   def test_connection!

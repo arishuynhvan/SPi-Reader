@@ -10,6 +10,7 @@ var storeCode;
 const STOP_ARG = 'stop-all-jobs';
 const START_RECORDING_ARG = 'start-recording';
 const STOP_RECORDING_ARG = 'stop-recording';
+const SAVE_RECORDING_ARG = 'save-recording';
 
 if('speechSynthesis' in window){
 
@@ -94,8 +95,25 @@ else
 	function saveCode(){
     //Store the value in the text-field, which is the input from the user, into a variable
     	storeCode = document.getElementById('code').value;
-    	console.log('saveCode() called');
+    	//console.log('saveCode() called');
     	console.log(storeCode);
+	}
+
+	function play() {
+		saveCode();
+		sendServer(storeCode);
+	}
+
+	function startRecording() {
+		sendServer(START_RECORDING_ARG);
+	}
+
+	function stopRecording() {
+		sendServer(STOP_RECORDING_ARG);
+	}
+
+	function saveRecording() {
+		sendServer(SAVE_RECORDING_ARG);
 	}
 
 	function formatCommands(storeCode) {
@@ -140,17 +158,4 @@ else
 				}
 			}
 		);
-	}
-
-	function play() {
-		saveCode();
-		sendServer(storeCode);
-	}
-
-	function startRecording() {
-		sendServer(START_RECORDING_ARG);
-	}
-
-	function stopRecording() {
-		sendServer(STOP_RECORDING_ARG);
 	}
