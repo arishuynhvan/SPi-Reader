@@ -12,7 +12,7 @@ def run
   puts 'Running Spi-Reader.rb'
   app = SPiReader.new
   app.test_connection!
-  app.run(args)
+  app.identifyCommand(args)
 end
 
 run

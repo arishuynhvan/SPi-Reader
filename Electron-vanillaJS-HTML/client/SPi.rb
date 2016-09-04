@@ -9,8 +9,30 @@ class SPiReader
   PORT = 4557
   GUI_ID = 'SPi-Reader'
 
+  STOP_ARG = 'stop-all-jobs'
+  START_RECORDING_ARG = 'start-recording'
+  STOP_RECORDING_ARG = 'stop-recording'
+
   RUN_COMMAND = '/run-code'
   STOP_COMMAND = '/stop-all-jobs'
+  START_RECORDING_COMMAND = '/start-recording'
+  STOP_RECORDING_COMMAND = '/stop-recording'
+
+  def identifyCommand(args)
+    puts case args[0]
+    when STOP_ARG
+      stop()
+
+    when START_RECORDING_ARG
+      start_recording()
+
+    when STOP_RECORDING_ARG
+      stop-recording()
+
+    else
+      run(command)
+    end
+  end
 
   def run(command)
     send_command(RUN_COMMAND, command)
@@ -18,6 +40,14 @@ class SPiReader
 
   def stop
     send_command(STOP_COMMAND)
+  end
+
+  def start_recording
+    send_command(START_RECORDING_COMMAND)
+  end
+
+  def stop_recording
+    send_command(STOP_RECORDING_COMMAND)
   end
 
   def test_connection!

@@ -1,10 +1,15 @@
 /**@module*/
 // Functions associated with forms and buttons on index.html are defined here.
 var shortcut=require('./mousetrap.js');
-var OSName = determineOS();
-
 var synth = window.speechSynthesis;
+
+// Server side
+var OSName = determineOS();
 var storeCode;
+
+const STOP_ARG = 'stop-all-jobs';
+const START_RECORDING_ARG = 'start-recording';
+const STOP_RECORDING_ARG = 'stop-recording';
 
 if('speechSynthesis' in window){
 
@@ -92,7 +97,7 @@ else
     	//console.log('saveCode() called');
     	console.log(storeCode);
 		// Functions associated with forms and buttons on index.html are defined here.
-		sendServer(storeCode);
+		return storeCode;
 	}
 
 	function formatCommands(storeCode) {
@@ -136,5 +141,17 @@ else
 					console.log('exec error: ' + error);
 				}
 			});
-
 		}
+
+	function play() {
+		var savedCode = saveCode();
+		sendServer(savedCode);
+	}
+
+	function startRecording() {
+		sendServer(START_RECORDING_ARG);
+	}
+
+	function stopRecording() {
+		sendServer(STOP_RECORDING_ARG);
+	}
