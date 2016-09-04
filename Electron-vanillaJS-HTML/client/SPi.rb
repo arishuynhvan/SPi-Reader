@@ -22,6 +22,7 @@ class SPiReader
 
   def identifyCommand(args)
     puts case args[0]
+
     when STOP_ARG
       stop()
 
@@ -32,7 +33,7 @@ class SPiReader
       stop_recording()
 
     when SAVE_RECORDING_ARG
-      save_recording()
+      save_recording(args[1])
 
     else
       run(args)
@@ -55,8 +56,8 @@ class SPiReader
     send_command(STOP_RECORDING_COMMAND)
   end
 
-  def save_recording
-    send_command(SAVE_RECORDING_COMMAND)
+  def save_recording(filename)
+    send_command(SAVE_RECORDING_COMMAND, filename)
   end
 
   def test_connection!

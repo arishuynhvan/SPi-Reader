@@ -101,19 +101,23 @@ else
 
 	function play() {
 		saveCode();
-		sendServer(storeCode);
+		sendServer(true, storeCode);
 	}
 
 	function startRecording() {
-		sendServer(START_RECORDING_ARG);
+		sendServer(false, START_RECORDING_ARG);
 	}
 
 	function stopRecording() {
-		sendServer(STOP_RECORDING_ARG);
+		sendServer(false, STOP_RECORDING_ARG);
+		saveRecording();
 	}
 
 	function saveRecording() {
-		sendServer(SAVE_RECORDING_ARG);
+		console.log('Saving Recording');
+		var filename = 'test';
+		sendServer(false, SAVE_RECORDING_ARG + ' ' + filename);
+		console.log('Saved Recording: ' + filename);
 	}
 
 	function formatCommands(storeCode) {
@@ -121,7 +125,6 @@ else
 		newCode = newCode.replace("do", "{");
 		newCode = newCode.replace("end", "}");
 
-		console.log("new code: "+newCode);
 		newCode = "\"" + newCode + "\"";
 
 		return newCode;
@@ -137,14 +140,21 @@ else
 		return clientCommand;
 	}
 
-	function sendServer(storeCode) {
+	function sendServer(needFormatting, storeCode) {
 		if(storeCode == null) {
 			console.log('buffer is empty');
 			return;
 		}
 
-		var code = formatCommands(storeCode);
-		console.log('playing: ' + code);
+		code = storeCode;
+
+		if(needFormatting) {
+			code = formatCommands(storeCode);
+			console.log('playing: ' + code);
+	    }
+	    else {
+	    	console.log(code);
+	    }
 
 		var clientCommand = OSBasedClientCommand();
 		var exec = require('child_process').exec, child;
