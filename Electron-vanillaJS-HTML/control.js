@@ -93,11 +93,9 @@ else
 		*/
 	function saveCode(){
     //Store the value in the text-field, which is the input from the user, into a variable
-    	var storeCode = document.getElementById('code').value;
-    	//console.log('saveCode() called');
+    	storeCode = document.getElementById('code').value;
+    	console.log('saveCode() called');
     	console.log(storeCode);
-		// Functions associated with forms and buttons on index.html are defined here.
-		return storeCode;
 	}
 
 	function formatCommands(storeCode) {
@@ -107,6 +105,7 @@ else
 
 		console.log("new code: "+newCode);
 		newCode = "\"" + newCode + "\"";
+
 		return newCode;
 	}
 
@@ -126,26 +125,26 @@ else
 			return;
 		}
 
-		storeCode = formatCommands(storeCode);
-		console.log('playing: ' + storeCode);
+		var code = formatCommands(storeCode);
+		console.log('playing: ' + code);
 
-		//TO-DO: Must handle the file convention separately for Mac & Windows
-		//For now, remember to change the backslash to slash when using Mac
 		var clientCommand = OSBasedClientCommand();
 		var exec = require('child_process').exec, child;
-		child = exec(clientCommand + storeCode,
+
+		child = exec(clientCommand + code,
 			function (error, stdout, stderr) {
 				console.log('stdout: ' + stdout);
 				console.log('stderr: ' + stderr);
 				if (error !== null) {
 					console.log('exec error: ' + error);
 				}
-			});
-		}
+			}
+		);
+	}
 
 	function play() {
-		var savedCode = saveCode();
-		sendServer(savedCode);
+		saveCode();
+		sendServer(storeCode);
 	}
 
 	function startRecording() {

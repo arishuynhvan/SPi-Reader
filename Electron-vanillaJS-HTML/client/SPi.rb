@@ -30,7 +30,7 @@ class SPiReader
       stop-recording()
 
     else
-      run(command)
+      run(args)
     end
   end
 
@@ -54,7 +54,7 @@ class SPiReader
     begin
 	  OSC::Server.new(PORT)
     #TO-DO: Write an if branch here: if (!windows)
-	  #abort("Error: Sonic Pi not listening on #{PORT}")
+	  abort("Error: Sonic Pi not listening on #{PORT}")
 	rescue
 	  puts 'Sonic-pi running'
 	end
