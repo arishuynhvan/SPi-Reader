@@ -4,35 +4,46 @@
   */
 
 
-import React, {Component} from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
+  import React, {Component} from 'react';
+  import RaisedButton from 'material-ui/RaisedButton';
 
   class ControlButtons extends Component {
     /** TO-DO: Access the value of the buttons & specify them
       *
       */
-    render() {
-      return (
-        <div id="control-btns">
-        <RaisedButton
-        label="Save"
-        className="btns"
-            primary={true}/>
-        <RaisedButton
-        label="Play"
-        className="btns"
-            primary={true}/>
-            <RaisedButton
-        label="Switch to terminal"
-            className="btns"
-            primary={true}/>
-        </div>
-        );
+
+      saveCode:function(){
+
+      },
+      saveBuffer:function(){
+
+      },
+      sendServer:function(){
+
+      },
+      render() {
+        return (
+          <div id="control-btns">
+          <RaisedButton
+          label="Save"
+          className="btns"
+          primary={true}
+          onClick={}/>
+          <RaisedButton
+          label="Play"
+          className="btns"
+          primary={true}/>
+          <RaisedButton
+          label="Switch to terminal"
+          className="btns"
+          primary={true}/>
+          </div>
+          );
+      }
+
     }
 
-  }
-
-  export default ControlButtons;
+    export default ControlButtons;
 
 // <input class="mousetrap" id="save" type="button" value="Save" onclick="" style="width: 50px; height: 30px; margin: 20px"/>
 
