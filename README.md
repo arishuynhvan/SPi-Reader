@@ -20,6 +20,6 @@ For documentation: https://doclets.io/arishuynhvan/SPi-Reader/basic-electron-dis
 - [ ] UX Design - Onboarding experience
 
 Current UI:
-![SPi Reader UI](img/UI_v0.2.0.png?raw=true "UI v0.2.0")
+![SPi Reader UI](/img/UI_v0.2.0.png?raw=true "UI v0.2.0")
 
 Requirement: Increase contrast to enhance accessibility
