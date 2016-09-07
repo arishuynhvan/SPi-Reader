@@ -18,3 +18,8 @@ For documentation: https://doclets.io/arishuynhvan/SPi-Reader/basic-electron-dis
 - [ ] Design Accessibility Test 
 - [x] UI Refresh
 - [ ] UX Design - Onboarding experience
+
+Current UI:
+![SPi Reader UI](/relative/path/to/img.jpg?raw=true "UI v0.2.0")
+
+Requirement: Increase contrast to enhance accessibility
