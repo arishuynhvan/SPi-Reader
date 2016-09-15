@@ -12,8 +12,8 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import Output from './components/terminal/output';
-import CodeRegion from './components/code/codeEditor';
-import ControlButtons from './components/code/buttons';
+import CodeEditor from './components/codeEditor';
+
 // const styles = {
 //   container: {
 //     textAlign: 'left'
@@ -62,8 +62,7 @@ class Main extends Component {
           <h1 className = "title">Sonic Pi Reader</h1>
           <Output/>
           <hr/>
-          <CodeRegion/>
-          <ControlButtons/>
+          <CodeEditor/>
         </div>
       </MuiThemeProvider>
     );
