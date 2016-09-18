@@ -81,7 +81,6 @@ class SPiReader
 
   def send_command(call_type, command=nil)
     prepared_command = OSC::Message.new(call_type, GUI_ID, command)
-    puts prepared_command
     client.send(prepared_command)
   end
   

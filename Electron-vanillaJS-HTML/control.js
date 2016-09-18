@@ -104,6 +104,10 @@ else
 		sendServer(true, storeCode);
 	}
 
+	function stop() {
+		sendServer(false, STOP_ARG);
+	}
+
 	function startRecording() {
 		sendServer(false, START_RECORDING_ARG);
 		play();
@@ -116,7 +120,7 @@ else
 
 	function saveRecording() {
 		//var filepath = '/Users/ravi/Documents/SPi-Reader/music/';
-		var filepath = '~/Documents/'; // put slash at the end
+		var filepath = '~/Desktop/'; // put slash at the end
 
 		var date = new Date();
 		var filename = filepath + 'sonic-pi-' + date.getTime() + '.wav';
