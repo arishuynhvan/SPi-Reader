@@ -1,6 +1,6 @@
-# SPi-Reader: A more accessible companion app for Sonic Pi
+# SPi-Reader: An accessible companion app for Sonic Pi
 
-## Sonic Pi
+## Sonic Pi:
 Website: http://sonic-pi.net <br>
 Github: https://github.com/samaaron/sonic-pi <br>
 
