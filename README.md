@@ -14,11 +14,11 @@
 3. Type your code into the main code editor. <br>
 4. Activate the speech synthesiser to read put what you've written by pressing CMD + Shift. <br>
 5. Cycle through the buttons on screen by pressing tab and read them out load by pressing CMD + Shift. <br>
-6. Activate a button by clicking on it or pressing Enter.
-7. Play your code using the "Play" button.
-8. Use the "Stop" button to stop the music.
-9. A .wav file of the music you have coded can be recorded and saved to your Desktop:
-  a) Press the "Start Recording" button, the music should play automatically.
-  b) Press the "Stop Recording" button, the .wav file should appear on your desktop.
+6. Activate a button by clicking on it or pressing Enter. <br>
+7. Play your code using the "Play" button. <br>
+8. Use the "Stop" button to stop the music.<br>
+9. A .wav file of the music you have coded can be recorded and saved to your Desktop: <br>
+  a) Press the "Start Recording" button, the music should play automatically. <br>
+  b) Press the "Stop Recording" button, the .wav file should appear on your desktop. <br>
   c) Press the "Stop button" to stop the music playing or press "Start Recording" again to record another section of your       code.
   
