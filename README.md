@@ -17,8 +17,8 @@ Dropbox link for downloadable app for MAC OSX: https://www.dropbox.com/s/pri7623
 2. Enter the main editor by clicking within the box or presing the tab key. <br>
 3. Type your code into the main code editor. <br>
 4. Activate the speech synthesiser to read out loud, what you've written by pressing CMD + Shift. <br>
-5. Cycle through the buttons on screen by pressing tab and read them out load by pressing CMD + Shift. <br>
-6. Activate a button by clicking on it or pressing Enter. <br>
+5. Cycle through the buttons on screen by pressing tab and read them out loud by pressing CMD + Shift. <br>
+6. Activate a button by clicking on it or pressing the Enter key. <br>
 7. Play your code using the "Play" button. <br>
 8. Use the "Stop" button to stop the music.<br>
 9. A .wav file of the music you have coded can be recorded and saved to your Desktop: <br>
