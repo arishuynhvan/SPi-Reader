@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SPi Reader</title>
+
+  </head>
+  <body>
+  <div id ="app"></div>
+<!-- To be read out onload by default-->
+  <div id="instruction">Let's SPi up the music! Press tab key to navigate around workspace</div>
+
+ <fieldset>
+    <textarea class="mousetrap" id="code" data-gramm="true" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: normal; font-size: 12px; transition: none; background: transparent !important;width:500px;height:200px;padding:20px"></textarea>
+    <input class="mousetrap" id="play" type="button" value="Play" onclick="play()" style="width: 50px; height: 30px;">
+    <input class="mousetrap" id="stop" type="button" value="Stop" onclick="stop()" style="width: 50px; height: 30px;">
+ </fieldset>
+        <input class="mousetrap" id="save" type="button" value="Start Recording" onclick="startRecording()" style="width: 100px; height: 30px; margin: 20px">
+
+        <input class="mousetrap" id="load" type="button" value="Stop Recording" onclick="stopRecording()" style="width: 100px; height: 30px; margin: 20px;">
+
+</body>
+</html>
+    <h6>We are using node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+
+  </body>
+
+ <script type="text/javascript" src="control.js"s></script>
+ <script type="text/javascript" src = "http://localhost:8080/webpack-dev-server.js"></script>
+<script type="text/javascript" src="http://localhost:8080/build/bundle.js"></script>
+</html>
