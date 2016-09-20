@@ -23,3 +23,6 @@ Current UI:
 ![SPi Reader UI](/Electron-vanillaJS-HTML/img/UI_v0.2.0.PNG "UI v0.2.0")
 
 Requirement: Increase contrast to enhance accessibility
+
+## Download:
+Download instructions for v0.1.0: https://github.com/arishuynhvan/SPi-Reader/tree/release/v0.1.0
