@@ -12,7 +12,7 @@
 1. Install and start Sonic Pi, start the SPi-Reader application as well (currently named Electron with default electron icon). <br>
 2. Enter the main editor by clicking within the box or presing the tab key. <br>
 3. Type your code into the main code editor. <br>
-4. Activate the speech synthesiser to read put what you've written by pressing CMD + Shift. <br>
+4. Activate the speech synthesiser to read out loud, what you've written by pressing CMD + Shift. <br>
 5. Cycle through the buttons on screen by pressing tab and read them out load by pressing CMD + Shift. <br>
 6. Activate a button by clicking on it or pressing Enter. <br>
 7. Play your code using the "Play" button. <br>
