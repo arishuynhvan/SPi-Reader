@@ -1,14 +1,14 @@
 # SPi-Reader 
 
-Dropbox link for downloadable app for MAC OSX: https://www.dropbox.com/s/pri7623tgrj9qtz/Electron.app.zip?dl=0
+### Dropbox link for downloadable app for MAC OSX: https://www.dropbox.com/s/pri7623tgrj9qtz/Electron.app.zip?dl=0
 
-To Download:
+## To Download:
 1. Click on the dropbox link.
 2. Download the .zip file, a dropbox account is not necessary to view the file.
 3. A .app file should appear in your Downloads folder.
 4. Double click on it to start.
 
-Use after download: <br>
+## Use after download: <br>
 1. Install and start Sonic Pi, start the SPi-Reader application as well (currently named Electron with default electron icon). <br>
 2. Enter the main editor by clicking within the box or presing the tab key. <br>
 3. Type your code into the main code editor. <br>
