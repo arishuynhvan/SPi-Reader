@@ -1,9 +1,13 @@
-# SPi-Reader 
+# SPi-Reader: A more accessible companion app for Sonic Pi
 
-### Dropbox link for downloadable app for MAC OSX: https://www.dropbox.com/s/pri7623tgrj9qtz/Electron.app.zip?dl=0
+## Sonic Pi
+Website: http://sonic-pi.net <br>
+Github: https://github.com/samaaron/sonic-pi <br>
 
 ## To Download:
-1. Click on the dropbox link.
+Dropbox link for downloadable app for MAC OSX: https://www.dropbox.com/s/pri7623tgrj9qtz/Electron.app.zip?dl=0
+
+1. Click on the dropbox link for the OS you are running on.
 2. Download the .zip file, a dropbox account is not necessary to view the file.
 3. A .app file should appear in your Downloads folder.
 4. Double click on it to start.
