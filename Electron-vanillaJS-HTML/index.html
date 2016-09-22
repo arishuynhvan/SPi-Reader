@@ -3,10 +3,37 @@
   <head>
     <meta charset="UTF-8">
     <title>SPi Reader</title>
+<link rel="stylesheet" type="text/css" href="css/html5TextEditor.css">
+ <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-  <div id ="app"></div>
+  <div id="page-wrapper" class="clearfix">
+    <h1>HTML5 Text Editor</h1>
+    <p>Powered by the FileSystem APIs.</p>
+
+    <form action="#" method="POST" id="file-form">
+      <div class="field">
+        <input type="text" name="filename" id="filename" placeholder="Filename (e.g. treehouse.txt)">
+      </div>
+      <div class="field">
+        <textarea name="content" id="content" placeholder="Type your content here..."></textarea>
+      </div>
+      <div class="field">
+        <button type="submit">Save File</button>
+        <div id="messages"></div>
+      </div>
+    </form>
+
+    <div id="files">
+      <h2>File Browser</h2>
+      <ul id="file-list"></ul>
+    </div>
+
+  </div>
 <!-- To be read out onload by default-->
   <div id="instruction">Let's SPi up the music! Press tab key to navigate around workspace</div>
 
@@ -27,6 +54,10 @@
   </body>
 
  <script type="text/javascript" src="control.js"s></script>
+ <script type="text/javascript" src="src/fileIO.js"></script>
+  <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="src/materialize.min.js"></script>
  <script type="text/javascript" src = "http://localhost:8080/webpack-dev-server.js"></script>
 <script type="text/javascript" src="http://localhost:8080/build/bundle.js"></script>
 </html>
