@@ -13,7 +13,7 @@ For documentation: https://doclets.io/arishuynhvan/SPi-Reader/basic-electron-dis
 - [x] Release app v0.1.0 with core functionalities by Mon, 22th Aug 2016
 - [ ] Schedule tests with users for feedback 
 - [ ] Easy installation package
-- [ ] Release cross-platform front-end web app v1.0.0 by Mon, 27th Aug 2016
+- [ ] Release cross-platform front-end web app v1.0.0 
 - [ ] Test on Raspberry Pi
 - [ ] Design Accessibility Test 
 - [x] UI Refresh
@@ -22,7 +22,12 @@ For documentation: https://doclets.io/arishuynhvan/SPi-Reader/basic-electron-dis
 Current UI:
 ![SPi Reader UI](/Electron-vanillaJS-HTML/img/UI_v0.1.2.PNG "UI v0.1.2")
 
-Requirement: Increase contrast to enhance accessibility
+Reference:
+
+1. [Building an HTML5 Text Editor with the FileSystem APIs](http://blog.teamtreehouse.com/building-an-html5-text-editor-with-the-filesystem-apis)
+2. [Exploring the FileSystem APIs](http://www.html5rocks.com/en/tutorials/file/filesystem/)
+
+Requirement: [Satisfy accessibility checklist](http://webaim.org/standards/wcag/checklist) (e.g. [color contrast](http://webaim.org/resources/contrastchecker/))
 
 ## Download:
 Download instructions for v0.1.0: https://github.com/arishuynhvan/SPi-Reader/tree/release/v0.1.0
