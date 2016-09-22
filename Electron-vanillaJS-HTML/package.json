@@ -34,6 +34,7 @@
     "babel-register": "^6.14.0",
     "babel-runtime": "^6.11.6",
     "electron-prebuilt": "^0.34.5",
+    "hammerjs": "^2.0.8",
     "material-ui": "^0.15.4",
     "react": "^15.3.1"
   }
