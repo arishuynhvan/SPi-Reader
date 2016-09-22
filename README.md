@@ -10,7 +10,7 @@ Dropbox link for Linux: https://www.dropbox.com/s/m4qb8pb91l3mdnk/SPi-Reader.zip
 
 1. Click on the dropbox link for the OS you are running on.
 2. Download the .zip file, a dropbox account is not necessary to view the file.
-3. A .app file should appear in your Downloads folder.
+3. A .app/executable file should appear in your Downloads folder.
 4. Double click on it to start.
 
 ## Use after download: <br>
