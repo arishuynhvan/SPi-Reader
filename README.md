@@ -5,7 +5,8 @@ Website: http://sonic-pi.net <br>
 Github: https://github.com/samaaron/sonic-pi <br>
 
 ## To Download:
-Dropbox link for downloadable app for MAC OSX: https://www.dropbox.com/s/pri7623tgrj9qtz/Electron.app.zip?dl=0
+Dropbox link for MAC OSX: https://www.dropbox.com/s/t912nx8sg7af08t/SPi-Reader.zip?dl=0
+Dropbox link for Linux: https://www.dropbox.com/s/m4qb8pb91l3mdnk/SPi-Reader.zip?dl=0
 
 1. Click on the dropbox link for the OS you are running on.
 2. Download the .zip file, a dropbox account is not necessary to view the file.
