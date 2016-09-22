@@ -11,12 +11,6 @@ module.exports = {
   context: __dirname + '/src',
   entry: {app:['webpack/hot/dev-server']},
 
-  output: {
-    filename: 'bundle.js',
-    path: __dirname + '/build',
-    publicPath:"http://localhost:8080/build/"
-  },
-
   devServer:{
     contentBase: __dirname,
     publicPath: 'http://localhost:8080/build/'
