@@ -1,6 +1,6 @@
 {
   "name": "electron-react-sass-SPi-Reader-Prototype",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "main": "main.js",
   "devDependencies": {
     "concurrently": "^2.2.0",
