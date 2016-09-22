@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>SPi Reader</title>
-
+    <link rel="stylesheet" type="text/css" href="dist/themes/default/style.min.css">
   </head>
   <body>
+    <div id="jstree_demo_div"></div>
+    <script>
+      $(function () { $('#jstree_demo_div').jstree(); });
+    </script>
   <div id ="app"></div>
 <!-- To be read out onload by default-->
   <div id="instruction">Let's SPi up the music! Press tab key to navigate around workspace</div>
@@ -25,7 +29,8 @@
     and Electron <script>document.write(process.versions.electron)</script>. <br>THIS IS A NOT A WORKING PROTOTYPE YET</h6>
 
   </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+<script src="dist/jstree.min.js"></script>
  <script type="text/javascript" src="control.js"s></script>
  <script type="text/javascript" src = "http://localhost:8080/webpack-dev-server.js"></script>
 <script type="text/javascript" src="http://localhost:8080/build/bundle.js"></script>

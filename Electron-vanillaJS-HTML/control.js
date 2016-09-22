@@ -5,7 +5,7 @@ var OSName = determineOS();
 
 var synth = window.speechSynthesis;
 var storeCode;
-
+$(function () { $('#jstree_demo_div').jstree(); });
 if('speechSynthesis' in window){
 
 	console.log('there is speechSynthesis');
