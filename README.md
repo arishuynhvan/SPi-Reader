@@ -1,9 +1,9 @@
-# SPi-Reader 
+# SPi-Reader
 
-## Web-based IDE for Sonic Pi designed for accessibility:sunglasses: 
+## Web-based IDE for Sonic Pi designed for accessibility:sunglasses:
 
 Use browser console that supports Ruby as the interface. Create plugins in the console for screen-reader & for communicating with local Sonic Pi IDE.
-For documentation: https://doclets.io/arishuynhvan/SPi-Reader/basic-electron-display 
+For documentation: https://doclets.io/arishuynhvan/SPi-Reader/basic-electron-display
 
 ###Milestones:
 - [x] Establish communication with local server
@@ -11,16 +11,16 @@ For documentation: https://doclets.io/arishuynhvan/SPi-Reader/basic-electron-dis
 - [x] Integrate documentation for JS files
 - [ ] Write a guideline on how to type comments for documentation
 - [x] Release app v0.1.0 with core functionalities by Mon, 22th Aug 2016
-- [ ] Schedule tests with users for feedback 
+- [ ] Schedule tests with users for feedback
 - [ ] Easy installation package
-- [ ] Release cross-platform front-end web app v1.0.0 
+- [ ] Release cross-platform front-end web app v1.0.0
 - [ ] Test on Raspberry Pi
-- [ ] Design Accessibility Test 
+- [ ] Design Accessibility Test
 - [x] UI Refresh
 - [ ] UX Design - Onboarding experience
 
 Current UI:
-![SPi Reader UI](/Electron-vanillaJS-HTML/img/UI_v0.1.2.PNG "UI v0.1.2")
+![SPi Reader UI](/Electron-vanillaJS-HTML/img/UI_v0.1.1.PNG "UI v0.1.1")
 
 Reference:
 
