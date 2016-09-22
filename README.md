@@ -22,6 +22,7 @@ For documentation: https://doclets.io/arishuynhvan/SPi-Reader/basic-electron-dis
 Current UI:
 ![SPi Reader UI](/Electron-vanillaJS-HTML/img/UI_v0.1.2.PNG "UI v0.1.2")
 Reference:
+
 1. [Building an HTML5 Text Editor with the FileSystem APIs](http://blog.teamtreehouse.com/building-an-html5-text-editor-with-the-filesystem-apis)
 2. [Exploring the FileSystem APIs](http://www.html5rocks.com/en/tutorials/file/filesystem/)
 
