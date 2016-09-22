@@ -9,7 +9,7 @@ module.exports = {
   and since our entry file is ./src/entry.js we'll put __dirname + '/src' in the context property
   and entry.js in the entry property.*/
   context: __dirname + '/src',
-  entry: {app:['webpack/hot/dev-server','\\..\\app.js']},
+  entry: {app:['webpack/hot/dev-server']},
 
   output: {
     filename: 'bundle.js',
@@ -36,13 +36,9 @@ module.exports = {
    It'll transpile the file for us before continuing on with bundling it up into the bundle.js file*/
    module: {
     loaders: [
-    { test: /\.js$/,
-      loaders:["react-hot","babel-loader"],
-      exclude: /node_modules/
-    },
     {
       test: /\.scss$/,
-      loaders: ["style",'css?sourceMap', 'sass?sourceMap'] 
+      loaders: ["style",'css?sourceMap', 'sass?sourceMap']
       //Highly important to make the loader transpile jsx into react-compatible js by default
     }
     ]

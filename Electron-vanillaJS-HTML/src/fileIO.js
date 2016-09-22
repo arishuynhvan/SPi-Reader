@@ -10,7 +10,7 @@ var filesystem = null;
 // Get references to the page elements.
 var form = document.getElementById('file-form');
 var filenameInput = document.getElementById('filename');
-var contentTextArea = document.getElementById('content');
+var contentTextArea = document.getElementById('code');
 
 var fileList = document.getElementById('file-list');
 
