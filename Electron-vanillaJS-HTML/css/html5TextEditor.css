@@ -80,10 +80,13 @@ textarea {
   min-height: 300px;
 }
 
+.btn,
 button {
   display: inline-block;
   border-radius: 3px;
   border: none;
+  width:7rem;
+  height:2rem;
   font-size: 0.9rem;
   padding: 0.6rem 1em;
   background: #86b32d;
