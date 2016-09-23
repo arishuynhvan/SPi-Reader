@@ -9,5 +9,4 @@ articles:
 
 branches:
 
-  - basic-electron-display
-  - feature/implementTTS
+  - master
